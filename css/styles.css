@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body{
+     background-color: orange;  
+}
+
+#search{
+    display: inline-block;
+    margin:  0 29%;
+    margin-bottom:20px;
+    width: 480px;
+    height:50px;
+}
+
+.container-main{
+    max-width: 1000px;
+    display:grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap:25px;
+}
+
+img:hover{
+    transform:skewX(10deg);
+    transition:transform .25s;
+}
+
+#search:focus{
+    border-color: black;
+    border-width:10px;
+}
